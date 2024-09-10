@@ -1,0 +1,36 @@
+
+.df { display: flex; }
+.aic { align-items: center; }
+.jcc { justify-content: center; }
+
+/* .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  color: white;
+} */
+
+.demo-wrapper {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+
+}
+
+.demo-gallery:not(.last) {
+  padding-bottom: 1rem;
+}
+
+.demo-text .text {
+  font-size: 250px;
+  line-height: 1;
+  font-weight: 900;
+  text-wrap: nowrap;
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+}
