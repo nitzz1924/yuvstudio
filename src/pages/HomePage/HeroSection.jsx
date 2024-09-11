@@ -124,7 +124,7 @@ const HeroSection = () => {
                 <div className="introduce">
                   <div className="title">{item.title}</div>
                   <div className="topic">{item.topic}</div>
-                  <button className="seeMore" onClick={handleSeeMore}>
+                  <button className="custombtnshero mt-3" onClick={handleSeeMore}>
                     SEE MORE &#8599;
                   </button>
                 </div>
@@ -169,9 +169,6 @@ const HeroSection = () => {
             ❯
           </button>
         </div>
-        <button id="back" onClick={handleBack}>
-          BACK
-        </button>
       </div>
     </>
   );

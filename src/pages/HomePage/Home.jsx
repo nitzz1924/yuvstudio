@@ -4,6 +4,7 @@ import AboutSection from './AboutSection';
 import VideoSection from './VideoSection';
 import BusinessSection from './BusinessSection';
 import WorkSection from './WorkSection';
+import JoinSection from './JoinSection';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <VideoSection/>
       <BusinessSection/>
       <WorkSection/>
+      <JoinSection/>
     </div>
   )
 }

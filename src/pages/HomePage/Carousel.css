@@ -110,8 +110,8 @@
   color: white;
 }
 .carousel .list .item .introduce .seeMore:hover {
-  border-bottom: 1px solid #ff0000;
-  color: rgb(255, 0, 0);
+  border-bottom: 1px solid #20cdeb;
+  color:#20cdeb;
   padding: 5px 0;
   cursor: pointer;
 }
