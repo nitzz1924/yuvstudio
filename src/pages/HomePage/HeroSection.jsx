@@ -20,7 +20,7 @@ const HeroSection = () => {
       topic: "VFX & Advertising Co.",
     },
     {
-      src: "assests/images/sliderfour.mp4",
+      src: "assests/images/sliderfive.mp4",
       title: "Yuvmedia Studio",
       topic: "VFX & Advertising Co.",
     },
@@ -125,8 +125,8 @@ const HeroSection = () => {
                   <div className="title">{item.title}</div>
                   <div className="topic">{item.topic}</div>
                   <button className="custombtnshero mt-3" onClick={handleSeeMore}>
-                    SEE MORE &#8599;
-                  </button>
+                    SEE MORE <i class="bi bi-arrow-right ms-3 text-info"></i>
+                  </button> 
                 </div>
                 <div className="detail">
                   <div className="title">Aerphone GHTK</div>

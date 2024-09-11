@@ -1,12 +1,14 @@
 import React from "react";
-let logo = "/assests/images/oldlogo.png";
+let logo = "/assests/images/newfinal.png";
 const Footer = () => {
   return (
-    <div className="container-fluid">
+    <>
+     <div className="container-fluid">
       <div className="row px-5 ">
         <div className="footercustom px-5">
-          <div className="col-md-4 logoheadingfooter">
-            YUVMEDIA<br/>STUDIO<br/><p className="fs-4 text-white">Bringing Your Visual Dreams to Life.</p>
+          <div className="col-md-4 logoheadingfooter text-start">
+            <img src={logo} width="220px" alt="logo"/>
+            <p className="fs-4 text-white">Bringing Your Visual Dreams to Life.</p>
           </div>
           <div className="col-md-4 text-white">
             <div className="footernav">
@@ -27,6 +29,10 @@ const Footer = () => {
         </div>
       </div>
     </div>
+    <div className="container-fluid text-center text-white pt-3 pb-3">
+        @2024 YUVMEDIA STUDIO All Rights Reserved.
+    </div>
+    </>
   );
 };
 
