@@ -9,12 +9,12 @@ body {
   background-color: #000000 !important;
   font-family: Poppins;
 }
-.headermain {
+/* .headermain {
   background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.185));
   width: 100vw;
   z-index: 999;
   position: relative;
-}
+} */
 header {
   width: 1300px;
   max-width: 90%;

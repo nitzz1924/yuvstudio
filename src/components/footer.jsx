@@ -1,5 +1,5 @@
 import React from "react";
-let logo = "/assests/images/newfinal.png";
+let logo = "/assests/images/logofinalfinalfinal.png";
 const Footer = () => {
   return (
     <>
@@ -12,18 +12,18 @@ const Footer = () => {
           </div>
           <div className="col-md-4 text-white">
             <div className="footernav">
-                <div><a href="">Home</a></div>
-                <div><a href="">About</a></div>
-                <div><a href="">Advertising</a></div>
-                <div><a href="">Contact</a></div>
+                <div><a href="/">Home</a></div>
+                <div><a href="/about">About</a></div>
+                <div><a href="#">Advertising</a></div>
+                <div><a href="/contact">Contact</a></div>
             </div>
           </div>
           <div className="col-md-4 text-white">
           <div className="footernav">
-                <div><a href="">Facebook</a></div>
-                <div><a href="">Instagram</a></div>
-                <div><a href="">Twitter</a></div>
-                <div><a href="">WhatsApp</a></div>
+                <div><a href="#">Facebook</a></div>
+                <div><a href="#">Instagram</a></div>
+                <div><a href="#">Twitter</a></div>
+                <div><a href="#">WhatsApp</a></div>
             </div>
           </div>
         </div>
