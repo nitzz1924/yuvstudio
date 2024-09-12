@@ -8,16 +8,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Import images
 const images = [
-  "assests/images/posterone.jpg",
-  "assests/images/postertwo.jpg",
-  "assests/images/posterthree.jpg",
-  "assests/images/posterfour.jpg",
-  "assests/images/posterfive.jpeg",
-  "assests/images/postersix.jpg",
-  "assests/images/posterseven.jpg",
-  "assests/images/postereight.jpg",
-  "assests/images/posternine.jpg",
-  "assests/images/posterten.jpg",
+  "assests/images/posters/Argylle.jpg",
+  "assests/images/posters/Secret Headquarters.jpg",
+  "assests/images/posters/The Witcher.jpg",
+  "assests/images/posters/House of Dragons.jpg",
+  "assests/images/posters/Resident Evil.jpg",
+  "assests/images/posters/The women & The Sea.jpg",
+  "assests/images/posters/Rebel Moon.jpg",
+  "assests/images/posters/Mirzapur.jpg",
+  "assests/images/posters/12th Fail.jpg",
+  "assests/images/posters/Fukery 3.jpg",
+  "assests/images/posters/Stranger things.webp",
 ];
 
 const WorkSection = () => {

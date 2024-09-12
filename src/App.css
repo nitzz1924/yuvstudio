@@ -1,40 +1,331 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+/* .App {
   position: static !important;
+} */
+body {
+  margin: 0;
+  background-color: #000000 !important;
+  font-family: Poppins;
 }
-body{
-  background-color: black !important;
+.headermain {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.185));
+  width: 100vw;
+  z-index: 999;
+  position: relative;
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  width: 1300px;
+  max-width: 90%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  height: 100px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  z-index: 999;
+  position: relative;
+}
+header .logo {
+  font-weight: bold;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+header nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#gradient-canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  --gradient-color-1: #000000;
+  --gradient-color-2: #ff0000a6;
+  --gradient-color-3: #20cdeb;
+  --gradient-color-4: #000000;
+  z-index: 0;
+  filter: blur(50px);
+  opacity: 50%;
+}
+.marqueetext {
+  position: absolute;
+  color: #ffffff8a;
+  font-size: 300px;
+  font-weight: 700;
+  /* right: 10%; */
+  top: 5%;
+  left: 0%;
+  opacity: 25%;
+}
+.aboutsec {
+  z-index: 999;
+  position: relative;
+  margin-top: 10%;
+  height: 100vh;
+}
+.aboutheading {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.maintext {
+  font-size: 250px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 230px;
+  font-family: "Fjalla One", sans-serif;
+}
+.indiatxt {
+  font-size: 150px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.details {
+  /* line-height: 160px; */
+  font-size: 19px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.banner {
+  z-index: 999;
+  perspective: 700px;
+  overflow-x: clip;
+  will-change: transform;
+  transition: transform 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+.bannervideo {
+  width: 100%;
+  height: 700px;
+  left: 0%;
+  transform: rotateY(5deg);
+  backface-visibility: visible; 
+}
+
+.bannerreflection {
+  top: 100%;
+  width: 100%;
+  height: 700px;
+  transform: rotateY(5deg) rotateZ(180deg);
+  opacity: 0.5;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1)
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1)
+  );
+  mix-blend-mode: multiply;
+}
+.videosec {
+  position: relative;
+  z-index: 999;
+  height: 100vh;
+}
+.businesssec {
+  position: relative;
+  z-index: 1500;
+  height: 100vh;
+}
+.maintextbusiness {
+  font-size: 168px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+}
+.businessdetailstxt {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins";
+  line-height: 42px;
+}
+.custombtns {
+  background-color: transparent;
+  border: 1px solid #747373;
+  border-radius: 20px;
+  padding: 0.5rem 1.4375rem;
+  color: white;
+  font-size: 25px;
+  font-family: "Fjalla One", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.custombtns:hover {
+  border: 1px solid #fff;
+}
+.joinsec {
+  position: relative;
+  z-index: 999;
+  height: 100vh;
+  margin-top: 20%;
+  overflow-x: hidden;
+}
+.imgdivs {
+  width: 200px;
+  height: 800px;
+}
+.imgdivs img {
+  opacity: 0.3;
+  filter: grayscale(100%);
+  transition: all 0.2s ease-in-out;
+}
+.imgdivs img:hover {
+  opacity: 0.5;
+  filter: grayscale(0%);
+}
+.joinusheadingtxt {
+  font-size: 168px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  cursor: pointer;
+}
+.joinustxt {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins";
+  line-height: 42px;
+}
+.joinusrow {
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+}
+.custombtnshero {
+  background-color: transparent;
+  border: 1px solid #20cdeb;
+  border-radius: 20px;
+  padding: 0.5rem 1.4375rem;
+  color: white;
+  font-size: 25px;
+  font-family: "Fjalla One", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.custombtnshero:hover {
+  border: 1px solid #20cdeb;
+}
+.footercustom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 100px 0px 100px 0px;
+}
+.footernav {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+}
+.footernav a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.footernav a:hover {
+  opacity: 0.5;
+}
+.logoheadingfooter {
+  font-size: 100px;
+  font-weight: 400;
+  color: white;
+  line-height: 90px;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.logoheadingfooter:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.contactheading {
+  font-size: 100px;
+  font-weight: 400;
+  color: white;
+  line-height: 90px;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.contactsec {
+  padding: 150px 0px 150px 0px;
+  position: relative;
+  z-index: 999;
+}
+.hr {
+  color: white;
+  width: 100%;
+}
+.phone {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Fjalla One", sans-serif;
+  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+}
+.phone span {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Poppins";
+  transition: all 0.5s ease-in-out;
+  text-transform: capitalize;
+}
+.phone a {
+  text-decoration: none;
+  color: white;
+  font-size: 42px;
+  font-weight: 400;
+  font-family: "Fjalla One", sans-serif;
+  transition: all 0.5s ease-in-out;
+  text-transform: lowercase;
+}
+.aboutheadings {
+  font-size: 173px;
+  font-weight: 400;
+  color: white;
+  line-height: 90px;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.aboutsec {
+  position: relative;
+  z-index: 999;
+  height: 100vh;
+}
+.aboutcontenthero {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins";
+  line-height: 42px;
+}
+.contentdetailsabout {
+  padding: 150px;
+}
+
+.companysec {
+  margin-top: 10%;
+  position: relative;
+  z-index: 999;
+  height: 100vh;
+}
+.companyheading {
+  color: white;
+  font-size: 120px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
 }

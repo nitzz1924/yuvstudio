@@ -29,7 +29,7 @@
 .carousel {
   position: relative;
   height: 100vh;
-  
+
   overflow: hidden;
   margin-top: -10px;
 }
@@ -111,7 +111,7 @@
 }
 .carousel .list .item .introduce .seeMore:hover {
   border-bottom: 1px solid #20cdeb;
-  color:#20cdeb;
+  color: #20cdeb;
   padding: 5px 0;
   cursor: pointer;
 }
@@ -319,7 +319,7 @@
 }
 .arrows {
   position: absolute;
-  bottom: 10px;
+  bottom: 170px;
   width: 1140px;
   max-width: 90%;
   display: flex;
@@ -399,15 +399,21 @@
 @media screen and (max-width: 767px) {
   /* mobile */
   .carousel {
-    height: auto;
+    height: 100vh;
   }
   .carousel .list .item {
     width: 100%;
     font-size: 10px;
+    right: 0%;
+    top: 30%;
+  }
+  .videocustom {
+    left: 0% !important;
+    bottom: 44%;
   }
 
   .carousel .list {
-    height: 100%;
+    height: 100vh;
   }
   .carousel .list .item:nth-child(2) .introduce {
     width: 50%;
@@ -452,7 +458,15 @@
   left: 30%;
   transform: rotateY(170deg) rotateZ(180deg);
   opacity: 0.5;
-   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) );
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1)
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1)
+  );
   mix-blend-mode: multiply;
 }

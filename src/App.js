@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import "./App.css";
 import Canvas from "./components/canvas";
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -12,9 +13,9 @@ import { Outlet } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  let [smoother,setsmoother]=useState(null);
+  let [smoother, setsmoother] = useState(null);
   useEffect(() => {
-   
+
     if (window.ScrollSmoother) {
       smoother = window.ScrollSmoother.create({
         wrapper: ".App",
@@ -37,11 +38,11 @@ function App() {
   return (
     <div className="App">
       <Canvas />
-      <Header />
       <div className="content">
+      <Header />
         <Outlet />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
