@@ -91,7 +91,7 @@ const HeroSection = () => {
     const hoverAnimation = gsap.to(aboutHeading, {
       duration: 1,
       text: {
-        value: "WELCOME TO VFX", // Change to desired text
+        value: "WELCOME TO YUNIVERSE", // Change to desired text
       },
       paused: true, // Pause the animation initially
     });

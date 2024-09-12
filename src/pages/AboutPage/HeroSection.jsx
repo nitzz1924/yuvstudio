@@ -6,7 +6,7 @@ const HeroSection = () => {
       <div className="container-fluid aboutsec px-5">
         <div className="row">
           <div className="col-md-12">
-            <div className="text-white aboutheading">ABOUT US</div>
+            <div className="text-white aboutheadingaboutpage">ABOUT US</div>
           </div>
         </div>
         <div className="row">

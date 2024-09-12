@@ -61,11 +61,14 @@ header nav a {
   margin-top: 10%;
   height: 100vh;
 }
-.aboutheading {
-  font-size: 26px;
+.aboutheadingaboutpage {
+  font-size: 173px;
   font-weight: 500;
   margin-bottom: 0;
   text-transform: uppercase;
+  color: white;
+  line-height: 90px;
+  font-family: "Fjalla One", sans-serif;
 }
 .maintext {
   font-size: 250px;
@@ -280,7 +283,7 @@ header nav a {
   text-transform:lowercase;
 }
 .aboutheading{
-  font-size: 173px;
+  font-size: 19px;
   font-weight: 400;
   color: white;
   line-height: 90px;
