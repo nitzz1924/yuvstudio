@@ -1,6 +1,6 @@
-/* .App {
-  text-align: center;
-} */
+.App {
+  position: static !important;
+}
 body{
   background-color: black !important;
 }

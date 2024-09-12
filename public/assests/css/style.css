@@ -5,7 +5,12 @@ body {
   background-color: #000000;
   font-family: Poppins;
 }
-
+.headermain{
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.185));
+  width: 100vw;
+  z-index: 999;
+  position: relative;
+}
 header {
   width: 1300px;
   max-width: 90%;
@@ -14,13 +19,12 @@ header {
   margin: auto;
   height: 100px;
   align-items: center;
-  z-index: 99;
+  z-index: 999;
   position: relative;
 }
 header .logo {
   font-weight: bold;
   color: white;
-  height: 90%;
 }
 header nav a {
   margin-left: 30px;
@@ -55,11 +59,12 @@ header nav a {
   z-index: 999;
   position: relative;
   margin-top: 10%;
-  height: 120vh;
+  height: 100vh;
 }
 .aboutheading {
   font-size: 26px;
   font-weight: 500;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 .maintext {
@@ -149,7 +154,7 @@ header nav a {
 .joinsec {
   position: relative;
   z-index: 999;
-  /* height: 100vh; */
+  height: 100vh;
   margin-top: 20%;
   overflow-x: hidden;
 }
@@ -171,6 +176,7 @@ header nav a {
   font-weight: 400;
   text-transform: uppercase;
   font-family: "Fjalla One", sans-serif;
+  cursor: pointer;
 }
 .joinustxt {
   font-size: 18px;
@@ -230,4 +236,85 @@ header nav a {
 .logoheadingfooter:hover{
   opacity: 0.5;
   cursor: pointer;
+}
+
+.contactheading{
+  font-size: 100px;
+  font-weight: 400;
+  color: white;
+  line-height: 90px;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.contactsec{
+  padding: 150px 0px 150px 0px;
+  position: relative;
+  z-index: 999;
+}
+.hr{
+  color: white;
+  width: 100%;
+}
+.phone{
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Fjalla One", sans-serif;
+  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+}
+.phone span{
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Poppins";
+  transition: all 0.5s ease-in-out;
+  text-transform:capitalize;
+}
+.phone a{
+  text-decoration: none;
+  color: white;
+  font-size: 42px;
+  font-weight: 400;
+  font-family: "Fjalla One", sans-serif;
+  transition: all 0.5s ease-in-out;
+  text-transform:lowercase;
+}
+.aboutheading{
+  font-size: 173px;
+  font-weight: 400;
+  color: white;
+  line-height: 90px;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.aboutsec{
+  position: relative;
+  z-index: 999;
+  height: 100vh;
+}
+.aboutcontenthero{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins";
+  line-height: 42px;
+}
+.contentdetailsabout{
+  padding: 150px;
+  
+}
+
+.companysec{
+  margin-top: 10%;
+  position: relative;
+  z-index: 999;
+  height: 100vh;
+}
+.companyheading{
+  color: white;
+  font-size: 120px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
 }

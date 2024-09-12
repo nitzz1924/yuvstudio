@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Carousel.css"; // Ensure you have the relevant CSS for animation
-
+import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
+gsap.registerPlugin(TextPlugin);
 
 const HeroSection = () => {
   const [items, setItems] = useState([
@@ -82,13 +84,31 @@ const HeroSection = () => {
   };
 
   useEffect(() => {
-    // Set interval for auto sliding
-    // autoSlideRef.current = setInterval(() => {
-    //   showSlider('next');
-    // }, 3000);
+    // Selecting the target element
+    const aboutHeading = document.querySelector("#bussniess");
 
-    // Cleanup interval on component unmount
-    return () => clearInterval(autoSlideRef.current);
+    // Define the GSAP animation for hover
+    const hoverAnimation = gsap.to(aboutHeading, {
+      duration: 1,
+      text: {
+        value: "WELCOME TO VFX", // Change to desired text
+      },
+      paused: true, // Pause the animation initially
+    });
+
+    // Add event listeners for mouse enter and leave
+    aboutHeading.addEventListener("mouseenter", () => hoverAnimation.play());
+    aboutHeading.addEventListener("mouseleave", () => hoverAnimation.reverse());
+
+    // Cleanup event listeners on component unmount
+    return () => {
+      aboutHeading.removeEventListener("mouseenter", () =>
+        hoverAnimation.play()
+      );
+      aboutHeading.removeEventListener("mouseleave", () =>
+        hoverAnimation.reverse()
+      );
+    };
   }, []);
 
   return (
@@ -99,7 +119,7 @@ const HeroSection = () => {
         width="500"
         loop
         scrolldelay="10"
-        class="marqueetext"
+        className="marqueetext"
       >
         VFX & ADVERTISING CO.
       </marquee>
@@ -125,7 +145,7 @@ const HeroSection = () => {
                   <div className="title">{item.title}</div>
                   <div className="topic">{item.topic}</div>
                   <button className="custombtnshero mt-3" onClick={handleSeeMore}>
-                    SEE MORE <i class="bi bi-arrow-right ms-3 text-info"></i>
+                    SEE MORE <i className="bi bi-arrow-right ms-3 text-info"></i>
                   </button> 
                 </div>
                 <div className="detail">

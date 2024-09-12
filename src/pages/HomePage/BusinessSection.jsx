@@ -1,11 +1,10 @@
-import React from 'react'
-
+import React, { useState, useEffect, useRef } from "react";
 const BusinessSection = () => {
   return (
     <div className="container-fluid p-5 businesssec">
     <div className="row">
       <div className="col-md-12">
-        <div className="text-white maintextbusiness">Our business</div>
+        <div className="text-white maintextbusiness" id="bussniess">Our business</div>
       </div>
     </div>
       <div className="row">
@@ -18,7 +17,7 @@ const BusinessSection = () => {
       </div>
       <div className="mt-5 mb-5">
         <a href="">
-            <button className='custombtns'>ABOUT DETAILS <i class="bi bi-arrow-right ms-3 text-info"></i></button>
+            <button className='custombtns'>ABOUT DETAILS <i className="bi bi-arrow-right ms-3 text-info"></i></button>
         </a>
       </div>
   </div>
