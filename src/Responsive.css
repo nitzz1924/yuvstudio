@@ -1,0 +1,142 @@
+    @media screen and (max-width: 1024px) {
+    .maintext {
+        font-size: 200px;
+        line-height: 190px;
+    }
+
+    .indiatxt {
+        font-size: 120px;
+    }
+
+    .maintextbusiness {
+        font-size: 130px;
+    }
+
+    .joinusheadingtxt,
+    .logoheadingfooter {
+        font-size: 130px;
+    }
+
+    .aboutheadings {
+        font-size: 140px;
+    }
+
+    .bannervideo,
+    .bannerreflection {
+        height: 500px;
+    }
+    }
+
+    @media screen and (max-width: 767px) {
+    header {
+        height: 80px;
+        justify-content: space-between;
+    }
+
+    header nav a {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+    .headermain .logo img {
+        width: 140px;
+    }
+    .nav-desktop {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .marqueetext {
+        font-size: 150px;
+        top: 30%;
+    }
+
+    .maintext {
+        font-size: 75px;
+        line-height: 70px;
+        font-weight: 400;
+    }
+
+    .indiatxt {
+        font-size: 80px;
+    }
+
+    .details {
+        font-size: 12px;
+    }
+    .details_1 {
+        font-size: 12px;
+        margin-top: -50px;
+    }
+    .aboutsec {
+        height: 50vh;
+    }
+    .maintextbusiness {
+        font-size: 90px;
+        line-height: 90px;
+    }
+
+    .businessdetailstxt {
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    .joinusheadingtxt,
+    .logoheadingfooter {
+        font-size: 80px;
+    }
+
+    .aboutheadings {
+        font-size: 90px;
+    }
+    .aboutheading {
+        font-size: 20px;
+    }
+
+    .aboutcontenthero {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .phone a {
+        font-size: 32px;
+    }
+
+    .bannervideo,
+    .bannerreflection {
+        height: 220px;
+    }
+    .videosec {
+        height: 40vh;
+    }
+    .custombtns,
+    .custombtnshero {
+        font-size: 20px;
+    }
+
+    .footernav {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .imgdivs {
+        width: 100px;
+        height: 300px;
+    }
+    .imgdivs img{
+        object-fit: cover;
+    }
+
+    .demo-text .text {
+        font-size: 100px !important;
+    }
+    .contentdetailsabout {
+        padding: 60px;
+    }
+
+
+
+
+}

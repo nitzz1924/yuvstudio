@@ -8,14 +8,14 @@ import JoinSection from './JoinSection';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <HeroSection />
       <AboutSection/>
       <VideoSection/>
       <BusinessSection/>
       <WorkSection/>
       <JoinSection/>
-    </div>
+    </>
   )
 }
 

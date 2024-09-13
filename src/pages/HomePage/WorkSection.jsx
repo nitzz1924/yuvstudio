@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 import imagesLoaded from "imagesloaded";
 import "./Workslider.css";
 
@@ -8,17 +9,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Import images
 const images = [
-  "assests/images/posters/Argylle.jpg",
-  "assests/images/posters/Secret Headquarters.jpg",
-  "assests/images/posters/The Witcher.jpg",
-  "assests/images/posters/House of Dragons.jpg",
+  "assests/images/posters/Argylle.png",
+  "assests/images/posters/Secret Headquarters.png",
+  "assests/images/posters/The Witcher.png",
+  "assests/images/posters/House of Dragons.png",
   "assests/images/posters/Resident Evil.jpg",
-  "assests/images/posters/The women & The Sea.jpg",
-  "assests/images/posters/Rebel Moon.jpg",
-  "assests/images/posters/Mirzapur.jpg",
-  "assests/images/posters/12th Fail.jpg",
-  "assests/images/posters/Fukery 3.jpg",
-  "assests/images/posters/Stranger things.webp",
+  "assests/images/posters/The women & The Sea.png",
+  "assests/images/posters/Rebel Moon.png",
+  "assests/images/posters/Mirzapur.png",
+  "assests/images/posters/12th Fail.png",
+  "assests/images/posters/Fukery 3.png",
+  "assests/images/posters/Stranger things.png"
 ];
 
 const WorkSection = () => {
@@ -84,7 +85,7 @@ const WorkSection = () => {
             <div className="wrapper text">OUR WORK</div>
         </section>
 
-      {Array.from({ length: 4 }).map((_, sectionIndex) => (
+      {Array.from({ length: 2 }).map((_, sectionIndex) => (
         <section className="demo-gallery" key={sectionIndex}>
           <ul className="wrapper">
             {images.map((imgSrc, imgIndex) => (
@@ -92,7 +93,7 @@ const WorkSection = () => {
                 <img
                   src={imgSrc}
                   width="400"
-                  height="500"
+                  height="550"
                   alt={`Gallery Image ${imgIndex}`}
                 />
               </li>
@@ -101,9 +102,9 @@ const WorkSection = () => {
         </section>
       ))}
 
-      <section className="demo-text">
+      {/* <section className="demo-text">
         <div className="wrapper text">WE DO BEST WORK</div>
-      </section>
+      </section> */}
     </div>
     
   );

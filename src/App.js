@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import "./App.css";
+import "./Responsive.css";
 import Canvas from "./components/canvas";
 import Header from "./components/header";
 import Footer from "./components/footer";

@@ -29,8 +29,7 @@
 .carousel {
   position: relative;
   height: 100vh;
-
-  overflow: hidden;
+  overflow: visible;
   margin-top: -10px;
 }
 .carousel .list {
@@ -84,7 +83,7 @@
 }
 .carousel .list .item .introduce .title {
   font-size: 8em;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 1em;
   text-transform: uppercase;
   font-family: "Fjalla One", sans-serif;
@@ -370,7 +369,7 @@
   width: 500px;
   height: 600px;
   content: "";
-  background-image: linear-gradient(70deg, #dc422a, rgb(21, 21, 114));
+  background-image: linear-gradient(70deg, #03a8f474, rgb(0 0 0));
   position: absolute;
   z-index: -1;
   border-radius: 20% 30% 80% 10%;
@@ -409,14 +408,22 @@
   }
   .videocustom {
     left: 0% !important;
-    bottom: 44%;
+    height: 210px !important;
+    top: 20%;
+  }
+
+  .reflection {
+    left: 0% !important;
+  }
+  .carousel .list .item:nth-child(2) .introduce {
+    top: -10%;
   }
 
   .carousel .list {
     height: 100vh;
   }
   .carousel .list .item:nth-child(2) .introduce {
-    width: 50%;
+    width: 100%;
   }
 
   .carousel .list .item img {
