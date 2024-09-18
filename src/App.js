@@ -37,11 +37,11 @@ function App() {
   return (
     <div className="App">
       <Canvas />
-      <Header />
       <div className="content">
+      <Header />
         <Outlet />
-      </div>
       <Footer />
+      </div>
     </div>
   );
 }
