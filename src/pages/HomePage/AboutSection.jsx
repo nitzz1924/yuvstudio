@@ -33,17 +33,17 @@ const AboutSection = () => {
     };
   }, []);
   return (
-    <div className="container-fluid p-5 aboutsec">
+    <div className="container-fluid p-md-5 p-3 aboutsec">
       <div className="row">
-        <div className="col-md-4">
+        <div className="col-md-4 col-3">
           <div className="text-white aboutheading text-end">ABOUT</div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 col-5">
           <div className="text-white maintext" id="vfx">
             VFX
           </div>
         </div>
-        <div className="col-md-4  text-start d-flex align-items-center justify-content-start">
+        <div className="col-md-4 col-4 text-start d-flex align-items-center justify-content-start">
           <div className="text-white details">
             SINCE 2020
             <br />
@@ -54,11 +54,11 @@ const AboutSection = () => {
         </div>
       </div>
       <div className="row">
-        <div className="text-white maintext text-center">COMPANY BASED</div>
+        <div className="text-white maintext text-end">COMPANY BASED</div>
       </div>
       <div className="row">
-        <div className="col-md-3  text-start d-flex align-items-end justify-content-end">
-          <div className="text-white details">
+        <div className="col-md-3 col-6 text-start d-flex align-items-end justify-content-end">
+          <div className="text-white details_1">
             We deliver the heart-stirring
             <br />
             sensation to the audience and
@@ -66,7 +66,7 @@ const AboutSection = () => {
             all those involved in our work.
           </div>
         </div>
-        <div className="col-md-7 text-white text-end maintext">IN INDIA</div>
+        <div className="col-md-7 col-12 text-white text-center maintext">IN INDIA</div>
       </div>
     </div>
   );

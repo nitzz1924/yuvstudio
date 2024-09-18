@@ -51,7 +51,7 @@ const JoinSection = () => {
       </div>
       <div className="joinusrow">
         <div className="row">
-          <div className="col-md-4 text-white joinusheadingtxt">JOIN US</div>
+          <div className="col-md-4 text-white ps-5 joinusheadingtxt">JOIN US</div>
           <div className="col-md-8 text-white ps-5 d-flex align-items-center justify-content-start joinustxt">
             Yuvmedia Studio is the visual effect company
             <br />

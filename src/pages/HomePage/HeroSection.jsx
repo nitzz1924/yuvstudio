@@ -75,13 +75,6 @@ const HeroSection = () => {
     showSlider("prev");
   };
 
-  const handleSeeMore = () => {
-    document.querySelector(".carousel").classList.add("showDetail");
-  };
-
-  const handleBack = () => {
-    document.querySelector(".carousel").classList.remove("showDetail");
-  };
 
   useEffect(() => {
     // Selecting the target element
@@ -127,57 +120,29 @@ const HeroSection = () => {
         <div className="list">
           {items.map((item, index) => (
             <div className="item" key={index}>
-                <video
-                  className="videocustom"
-                  autoPlay
-                  muted
-                  loop
-                  src={item.src}
-                ></video>
-                <video
-                  className="reflection"
-                  src={item.src}
-                  autoPlay
-                  loop
-                  muted
-                ></video>
-                <div className="introduce">
-                  <div className="title">{item.title}</div>
-                  <div className="topic">{item.topic}</div>
-                  <button className="custombtnshero mt-3" onClick={handleSeeMore}>
+              <video
+                className="videocustom"
+                autoPlay
+                muted
+                loop
+                src={item.src}
+              ></video>
+              <video
+                className="reflection"
+                src={item.src}
+                autoPlay
+                loop
+                muted
+              ></video>
+              <div className="introduce">
+                <div className="title">{item.title}</div>
+                <div className="topic">{item.topic}</div>
+                <a href="#">
+                  <button className="custombtnshero mt-3">
                     SEE MORE <i className="bi bi-arrow-right ms-3 text-info"></i>
-                  </button> 
-                </div>
-                <div className="detail">
-                  <div className="title">Aerphone GHTK</div>
-                  <div className="des">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Dolor, reiciendis suscipit nobis nulla animi, modi explicabo
-                    quod corrupti impedit illo, accusantium in eaque nam quia
-                    adipisci aut distinctio porro eligendi. Reprehenderit
-                    nostrum consequuntur ea! Accusamus architecto dolores modi
-                    ducimus facilis quas voluptatibus! Tempora ratione
-                    accusantium magnam nulla tenetur autem beatae.
-                  </div>
-                  <div className="specifications">
-                    <div>
-                      <p>Used Time</p>
-                      <p>6 hours</p>
-                    </div>
-                    <div>
-                      <p>Charging port</p>
-                      <p>USB-C</p>
-                    </div>
-                    <div>
-                      <p>Weight</p>
-                      <p>200g</p>
-                    </div>
-                  </div>
-                  <div className="checkout">
-                    <button>Checkout</button>
-                    <button>More Details</button>
-                  </div>
-                </div>
+                  </button>
+                </a>
+              </div>
             </div>
           ))}
         </div>
